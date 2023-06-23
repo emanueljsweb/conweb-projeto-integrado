@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Enviar Certificado | Atividades Complementares</title>
+    </head>
+
+    <body class="flex-container">
+
+        <div id="menu-lateral" class="flex-container">
+            <img id="logo-uvv" src="images/logotipo_uvv_versao_fundo_azul.png" alt="Logotipo da Universidade Vila Velha">
+            <nav id="menu-items">
+                <ul>
+                    <li class="menu-item"><a href="index.html">Dashboard</a></li>
+                    <li class="menu-item"><a href="enviar-certificado.html">Enviar Certificado</a></li>
+                    <li class="menu-item"><a href="historico-de-envios.html">Histórico de Envios</a></li>
+                </ul>
+            </nav>
+            <div id="usuario-logado" class="flex-container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <g id="user-icon">
+                    <path id="Vector" d="M12 2C10.6868 2 9.38642 2.25866 8.17317 2.7612C6.95991 3.26375 5.85752 4.00035 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C5.85752 19.9997 6.95991 20.7362 8.17317 21.2388C9.38642 21.7413 10.6868 22 12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 10.6868 21.7413 9.38642 21.2388 8.17317C20.7362 6.95991 19.9997 5.85752 19.0711 4.92893C18.1425 4.00035 17.0401 3.26375 15.8268 2.7612C14.6136 2.25866 13.3132 2 12 2ZM7.07 18.28C7.5 17.38 10.12 16.5 12 16.5C13.88 16.5 16.5 17.38 16.93 18.28C15.57 19.36 13.86 20 12 20C10.14 20 8.43 19.36 7.07 18.28ZM18.36 16.83C16.93 15.09 13.46 14.5 12 14.5C10.54 14.5 7.07 15.09 5.64 16.83C4.62 15.5 4 13.82 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 13.82 19.38 15.5 18.36 16.83ZM12 6C10.06 6 8.5 7.56 8.5 9.5C8.5 11.44 10.06 13 12 13C13.94 13 15.5 11.44 15.5 9.5C15.5 7.56 13.94 6 12 6ZM12 11C11.6022 11 11.2206 10.842 10.9393 10.5607C10.658 10.2794 10.5 9.89782 10.5 9.5C10.5 9.10218 10.658 8.72064 10.9393 8.43934C11.2206 8.15804 11.6022 8 12 8C12.3978 8 12.7794 8.15804 13.0607 8.43934C13.342 8.72064 13.5 9.10218 13.5 9.5C13.5 9.89782 13.342 10.2794 13.0607 10.5607C12.7794 10.842 12.3978 11 12 11Z" fill="white"/>
+                    </g>
+                </svg>
+                <p>Você está logado como <strong>Aluno.</strong> <a href="#" id="sair">Sair?</a></p>
+            </div>
+        </div>
+
+        <main>
+            <p><a href="index.html">Dashboard</a> > Histórico de Envios</p>
+            <section>
+                <div id="acoes-historico" class="flex-container">
+                    <input type="search" name="buscar-certificado" id="buscar-certificado" placeholder="Pesquisar">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g id="plus">
+                            <path id="Vector" d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z"/>
+                            </g>
+                        </svg>
+                        NOVO
+                    </button>
+                </div>
+
+                <div id="historico-envios">
+                    <div class="card-envio">
+                        <div>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="timer">
+                                <path id="Vector" d="M12 4H36V16L28 24L36 32V44H12V32L20 24L12 16V4ZM32 33L24 25L16 33V40H32V33ZM24 23L32 15V8H16V15L24 23ZM20 12H28V13.5L24 17.5L20 13.5V12Z" fill="#333333"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <p><strong>Título:</strong> Introdução à Lógica de Programação</p>
+                            <p><strong>Carga Horária:</strong> 20h</p>
+                        </div>
+                        <div>
+                            <p><strong>Data de Envio:</strong> 07/04/2023</p>
+                            <p><strong>Pontuação:</strong> 5 pts</p>
+                        </div>
+                        <div>
+                            <p><strong>Tipo de Atividade:</strong> Extensão</p>
+                            <p><strong>Status:</strong> <span class="pendente">Pendente</span></p>
+                        </div>
+                        <div class="acoes-certificado">
+                            <a class="botao-acao">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="pencil">
+                                    <path id="Vector" d="M14.06 9L15 9.94L5.92 19H5V18.08L14.06 9ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a class="botao-acao">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="eye">
+                                    <path id="Vector" d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C4.83 15.36 8.24 17.5 12 17.5C15.76 17.5 19.17 15.36 20.82 12C19.17 8.64 15.76 6.5 12 6.5C8.24 6.5 4.83 8.64 3.18 12Z" />
+                                    </g>
+                                </svg>    
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-envio">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                <g id="check">
+                                <path id="Vector" d="M24 4C13 4 4 13 4 24C4 35 13 44 24 44C35 44 44 35 44 24C44 13 35 4 24 4ZM24 40C15.18 40 8 32.82 8 24C8 15.18 15.18 8 24 8C32.82 8 40 15.18 40 24C40 32.82 32.82 40 24 40ZM33.18 15.16L20 28.34L14.82 23.18L12 26L20 34L36 18L33.18 15.16Z" fill="#333333"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <p><strong>Título:</strong> HTML & CSS Básicos</p>
+                            <p><strong>Carga Horária:</strong> 40h</p>
+                        </div>
+                        <div>
+                            <p><strong>Data de Envio:</strong> 31/03/2023</p>
+                            <p><strong>Pontuação:</strong> 7 pts</p>
+                        </div>
+                        <div>
+                            <p><strong>Tipo de Atividade:</strong> Extensão</p>
+                            <p><strong>Status:</strong> <span class="aprovado">Aprovado</span></p>
+                        </div>
+                        <div class="acoes-certificado">
+                            <a class="botao-acao">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="pencil">
+                                    <path id="Vector" d="M14.06 9L15 9.94L5.92 19H5V18.08L14.06 9ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a class="botao-acao">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="eye">
+                                    <path id="Vector" d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C4.83 15.36 8.24 17.5 12 17.5C15.76 17.5 19.17 15.36 20.82 12C19.17 8.64 15.76 6.5 12 6.5C8.24 6.5 4.83 8.64 3.18 12Z" />
+                                    </g>
+                                </svg>    
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="card-envio">
+                        <div>   
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="circle-x">
+                                <path id="Vector" d="M18 14H22L24 19L26 14H30L26 24L30 34H26L24 29L22 34H18L22 24L18 14ZM24 4C26.6264 4 29.2272 4.51732 31.6537 5.52241C34.0802 6.5275 36.285 8.00069 38.1421 9.85786C39.9993 11.715 41.4725 13.9198 42.4776 16.3463C43.4827 18.7728 44 21.3736 44 24C44 29.3043 41.8929 34.3914 38.1421 38.1421C34.3914 41.8929 29.3043 44 24 44C21.3736 44 18.7728 43.4827 16.3463 42.4776C13.9198 41.4725 11.715 39.9993 9.85786 38.1421C6.10714 34.3914 4 29.3043 4 24C4 18.6957 6.10714 13.6086 9.85786 9.85786C13.6086 6.10714 18.6957 4 24 4ZM24 8C19.7565 8 15.6869 9.68571 12.6863 12.6863C9.68571 15.6869 8 19.7565 8 24C8 28.2435 9.68571 32.3131 12.6863 35.3137C15.6869 38.3143 19.7565 40 24 40C28.2435 40 32.3131 38.3143 35.3137 35.3137C38.3143 32.3131 40 28.2435 40 24C40 19.7565 38.3143 15.6869 35.3137 12.6863C32.3131 9.68571 28.2435 8 24 8Z" fill="#333333"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div>
+                            <p><strong>Título:</strong> Inova Week 2022</p>
+                            <p><strong>Carga Horária:</strong> 40h</p>
+                        </div>
+                        <div>
+                            <p><strong>Data de Envio:</strong> 05/02/2023</p>
+                            <p><strong>Pontuação:</strong> 15pts</p>
+                        </div>
+                        <div>
+                            <p><strong>Tipo de Atividade:</strong> Extensão</p>
+                            <p><strong>Status:</strong> <span class="reprovado">Reprovado</span></p>
+                        </div>
+                        <div class="acoes-certificado" disabled>
+                            <a class="botao-acao disabled">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="pencil">
+                                    <path id="Vector" d="M14.06 9L15 9.94L5.92 19H5V18.08L14.06 9ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19Z"/>
+                                    </g>
+                                </svg>
+                            </a>
+                            <a class="botao-acao disabled">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="eye">
+                                    <path id="Vector" d="M12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9ZM12 4.5C17 4.5 21.27 7.61 23 12C21.27 16.39 17 19.5 12 19.5C7 19.5 2.73 16.39 1 12C2.73 7.61 7 4.5 12 4.5ZM3.18 12C4.83 15.36 8.24 17.5 12 17.5C15.76 17.5 19.17 15.36 20.82 12C19.17 8.64 15.76 6.5 12 6.5C8.24 6.5 4.83 8.64 3.18 12Z" />
+                                    </g>
+                                </svg>    
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+    
+</html>
